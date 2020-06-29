@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".lengthConversionActivity">
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_style"
+        android:onClick="convert"
+        android:text="convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/button_style2"
+        android:onClick="reset"
+        android:text="reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kilometerEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="in kilometer (km)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertButton" />
+
+    <EditText
+        android:id="@+id/meterEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="in meter (m)"
+        android:background="@drawable/text_background"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilometerEditText" />
+
+    <EditText
+        android:id="@+id/centimeterEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="in centimeter (cm)"
+        android:background="@drawable/text_background"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meterEditText" />
+
+    <EditText
+        android:id="@+id/footEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="in foot (ft)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centimeterEditText" />
+
+    <EditText
+        android:id="@+id/inchesEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="n inches (in)"
+        android:background="@drawable/text_background"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/footEditText" />
+
+    <EditText
+        android:id="@+id/milesEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="in miles (mi)"
+        android:background="@drawable/text_background"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inchesEditText" />
+
+    <EditText
+        android:id="@+id/micronEditText"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="in micron (meu)"
+        android:background="@drawable/text_background"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milesEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
